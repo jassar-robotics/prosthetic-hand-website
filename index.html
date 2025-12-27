@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jassar Robotics | Prosthetic Hand Build Log</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <header class="hero" id="top">
+    <nav class="nav">
+      <div class="logo">JASSAR ROBOTICS</div>
+      <div class="nav-links">
+        <a href="#mission">Mission</a>
+        <a href="#docs">Documentation</a>
+        <a href="#stages">Stages</a>
+        <a href="#contribute">Contribute</a>
+      </div>
+      <a class="nav-cta" href="#contribute">Join the Build</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Open build log for the prosthetic hand project</p>
+        <h1>Build an intense, human-first prosthetic hand and document every step.</h1>
+        <p class="hero-lede">
+          This site is a living record of the design, electronics, and assembly journey.
+          Every stage is documented so contributors can jump in fast, understand the design
+          logic, and push the project forward.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#stages">Explore the stages</a>
+          <a class="btn ghost" href="#docs">Read the docs</a>
+        </div>
+        <div class="hero-notes">
+          <div>
+            <span class="tag">Stage 0</span>
+            <strong>Planning locked</strong>
+          </div>
+          <div>
+            <span class="tag">Stage 1</span>
+            <strong>Design explorations</strong>
+          </div>
+          <div>
+            <span class="tag">Stage 3</span>
+            <strong>Assembling + wiring</strong>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <h2>Build Snapshot</h2>
+        <p class="panel-sub">Current focus and contributor signals.</p>
+        <div class="panel-grid">
+          <div class="panel-card">
+            <p class="panel-label">Primary goal</p>
+            <p class="panel-value">Reliable finger actuation with clean cable routing</p>
+          </div>
+          <div class="panel-card">
+            <p class="panel-label">Active needs</p>
+            <ul>
+              <li>PCB layout review</li>
+              <li>Tendon routing alternatives</li>
+              <li>Field testing notes</li>
+            </ul>
+          </div>
+          <div class="panel-card">
+            <p class="panel-label">Documentation</p>
+            <p class="panel-value">Schematics, CAD notes, and stage logs</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section mission" id="mission">
+      <div class="section-header">
+        <p class="kicker">Mission</p>
+        <h2>Make the prosthetic hand accessible, testable, and contributor-ready.</h2>
+        <p>
+          The goal is a rugged, affordable prosthetic hand that can be built and improved
+          by a community of makers, engineers, and clinicians. This site is the shared
+          workspace: design intent, experiments, failures, and lessons are all captured.
+        </p>
+      </div>
+      <div class="mission-grid">
+        <div class="mission-card reveal">
+          <h3>Open Documentation</h3>
+          <p>Clear notes, annotated diagrams, and step-by-step logs for every build stage.</p>
+        </div>
+        <div class="mission-card reveal">
+          <h3>Contributor Ready</h3>
+          <p>Defined tasks, contribution tracks, and quick onboarding for new builders.</p>
+        </div>
+        <div class="mission-card reveal">
+          <h3>Real-world Testing</h3>
+          <p>Focus on usability, durability, and feedback loops from real users.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section docs" id="docs">
+      <div class="section-header">
+        <p class="kicker">Documentation</p>
+        <h2>Everything a contributor needs to learn, build, and improve the hand.</h2>
+      </div>
+      <div class="docs-grid">
+        <article class="doc-card reveal">
+          <h3>Architecture Overview</h3>
+          <p>Mechanical layout, actuator choices, sensor logic, and control strategy.</p>
+          <span class="doc-label">Read first</span>
+        </article>
+        <article class="doc-card reveal">
+          <h3>Materials + Tools</h3>
+          <p>Parts list, fabrication tools, wiring kits, and sourcing tips.</p>
+          <span class="doc-label">Procurement</span>
+        </article>
+        <article class="doc-card reveal">
+          <h3>Assembly Playbook</h3>
+          <p>Exploded steps, cable routing, and torque tuning for each finger.</p>
+          <span class="doc-label">Stage 3 focus</span>
+        </article>
+        <article class="doc-card reveal">
+          <h3>Testing Protocols</h3>
+          <p>Grip strength measurements, endurance testing, and feedback forms.</p>
+          <span class="doc-label">Quality</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stages" id="stages">
+      <div class="section-header">
+        <p class="kicker">Stage Log</p>
+        <h2>Progress snapshots from planning to assembly.</h2>
+        <p>Each stage captures intent, materials, and visual evidence to help new contributors align fast.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"></div>
+        <div class="timeline-step reveal">
+          <span class="step-index">00</span>
+          <div>
+            <h3>Planning</h3>
+            <p>Requirements, user profiles, motion studies, and constraints.</p>
+          </div>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-index">01</span>
+          <div>
+            <h3>Designing</h3>
+            <p>CAD sketches, scale models, and early actuator testing.</p>
+          </div>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-index">02</span>
+          <div>
+            <h3>Fabrication</h3>
+            <p>Parts sourcing and print prep. Full documentation incoming.</p>
+          </div>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-index">03</span>
+          <div>
+            <h3>Assembling + Wiring</h3>
+            <p>Current focus: integration, wiring paths, and control tuning.</p>
+          </div>
+        </div>
+      </div>
+
+      <article class="stage-card reveal">
+        <div class="stage-info">
+          <span class="stage-badge">Stage 0</span>
+          <h3>Planning the platform</h3>
+          <p>
+            Defining the project scope, user goals, and constraints. This stage sets
+            expectations for ergonomics, cost, and maintainability.
+          </p>
+          <ul class="stage-meta">
+            <li>Focus: user research + motion studies</li>
+            <li>Output: requirement map + initial architecture</li>
+          </ul>
+        </div>
+        <div class="stage-gallery">
+          <img src="Stage0Images/011.jpg" alt="Stage 0 planning notes and early sketches">
+        </div>
+      </article>
+
+      <article class="stage-card reveal">
+        <div class="stage-info">
+          <span class="stage-badge">Stage 1</span>
+          <h3>Designing the hand</h3>
+          <p>
+            Refining the form and mechanical layout. This includes actuator positioning,
+            tendon paths, and finger ergonomics.
+          </p>
+          <ul class="stage-meta">
+            <li>Focus: CAD iteration + scale testing</li>
+            <li>Output: printable geometry + design notes</li>
+          </ul>
+        </div>
+        <div class="stage-gallery">
+          <img src="Stage1Images/012.jpg" alt="Stage 1 design model and prototype layout">
+        </div>
+      </article>
+
+      <article class="stage-card reveal">
+        <div class="stage-info">
+          <span class="stage-badge">Stage 3</span>
+          <h3>Assembling and wiring</h3>
+          <p>
+            Current build phase: assembling the hand, wiring the control system, and
+            testing for stability. This is where contributors can help the most.
+          </p>
+          <ul class="stage-meta">
+            <li>Focus: integration + electronics routing</li>
+            <li>Output: assembly notes + wiring diagrams</li>
+          </ul>
+        </div>
+        <div class="stage-gallery gallery-wide">
+          <img src="Stage2Images/001.jpg" alt="Stage 3 assembly components laid out">
+          <img src="Stage2Images/002.jpg" alt="Stage 3 wiring harness preparation">
+          <img src="Stage2Images/003.jpg" alt="Stage 3 actuator alignment test">
+          <img src="Stage2Images/004.jpg" alt="Stage 3 component fit check">
+          <img src="Stage2Images/005.jpg" alt="Stage 3 cable routing inside the frame">
+          <img src="Stage2Images/006.jpg" alt="Stage 3 servo placement overview">
+          <img src="Stage2Images/007.jpg" alt="Stage 3 wiring layout closeup">
+          <img src="Stage2Images/008.jpg" alt="Stage 3 structural assembly progress">
+          <img src="Stage2Images/009.jpg" alt="Stage 3 control board wiring">
+          <img src="Stage2Images/010.jpg" alt="Stage 3 end-of-day assembly status">
+        </div>
+      </article>
+    </section>
+
+    <section class="section contribute" id="contribute">
+      <div class="section-header">
+        <p class="kicker">Contribution</p>
+        <h2>Help build the next iterations.</h2>
+        <p>
+          Contributors can jump in across mechanics, electronics, software, and documentation.
+          Every contribution is logged and credited so the community can build faster.
+        </p>
+      </div>
+      <div class="contribute-grid">
+        <div class="contribute-card reveal">
+          <h3>Mechanical Design</h3>
+          <p>Improve finger joints, tendon anchors, and printable geometry.</p>
+        </div>
+        <div class="contribute-card reveal">
+          <h3>Electronics + Control</h3>
+          <p>Refine wiring harnesses, sensor calibration, and motor drivers.</p>
+        </div>
+        <div class="contribute-card reveal">
+          <h3>Testing + Feedback</h3>
+          <p>Run grip tests, wear trials, and share field notes.</p>
+        </div>
+        <div class="contribute-card reveal">
+          <h3>Documentation</h3>
+          <p>Turn build sessions into clear guides and diagrams for the next builder.</p>
+        </div>
+      </div>
+
+      <div class="protocol reveal">
+        <div>
+          <h3>Contribution Protocol</h3>
+          <ol>
+            <li>Review the latest stage notes and understand the current focus.</li>
+            <li>Choose a task area and align with the build goals.</li>
+            <li>Document your work with photos, measurements, and results.</li>
+            <li>Share updates and recommend the next experiment.</li>
+          </ol>
+        </div>
+        <div class="protocol-panel">
+          <h4>Contributor Signals</h4>
+          <p>We are actively looking for:</p>
+          <ul>
+            <li>Wiring diagrams and cable management insights</li>
+            <li>Stress testing and endurance benchmarks</li>
+            <li>Alternative actuator and sensor ideas</li>
+          </ul>
+          <a class="btn primary" href="#docs">Start with the docs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>Jassar Robotics</h3>
+      <p>Built in public. Learn the process, join the build, and help shape the next version.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#top">Back to top</a>
+      <a href="#stages">Stage log</a>
+      <a href="#contribute">Contribute</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
