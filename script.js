@@ -1,19 +1,51 @@
-const revealItems = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
 
-if (revealItems.length) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
+const observeRevealItems = (root = document) => {
+  root.querySelectorAll('.reveal').forEach((item) => {
+    if (item.dataset.revealObserved === 'true') {
+      return;
+    }
+    item.dataset.revealObserved = 'true';
+    revealObserver.observe(item);
+  });
+};
+
+observeRevealItems();
+
+const includeTargets = document.querySelectorAll('[data-include]');
+
+if (includeTargets.length) {
+  includeTargets.forEach((target) => {
+    const source = target.getAttribute('data-include');
+    if (!source) {
+      return;
+    }
+
+    fetch(source)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to load ${source}`);
         }
+        return response.text();
+      })
+      .then((html) => {
+        target.innerHTML = html;
+        observeRevealItems(target);
+      })
+      .catch((error) => {
+        console.error(error);
       });
-    },
-    { threshold: 0.2 }
-  );
-
-  revealItems.forEach((item) => observer.observe(item));
+  });
 }
 
 const nav = document.querySelector('.nav');
