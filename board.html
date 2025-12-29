@@ -8,24 +8,45 @@
   <link rel="stylesheet" href="css/board.css?v=1.1">
 </head>
 <body class="board-page">
-  <div class="board-shell">
-    <aside class="board-sidebar">
-      <div class="board-brand">
-        <div>
-          <p class="brand-title">prosthetic-hand</p>
-          <span class="brand-subtitle">Status Boards</span>
+  <!-- Universal Navigation -->
+  <nav class="universal-nav" id="main-nav">
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">
+        <span class="brand-icon">🦾</span>
+        <span class="brand-text">Prosthetic Hand</span>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      
+      <div class="nav-menu">
+        <div class="nav-links-group">
+          <a href="index.html#mission" class="nav-link">Mission</a>
+          <a href="philosophy.html" class="nav-link">Philosophy</a>
+          <a href="index.html#docs" class="nav-link">Docs</a>
+          <a href="board.html" class="nav-link active">Status Board</a>
+          <a href="index.html#stages" class="nav-link">Stages</a>
         </div>
+        
+        <div class="nav-divider"></div>
+        
+        <div class="nav-links-group">
+          <a href="index.html#contribute" class="nav-link">Contribute</a>
+          <a href="index.html#contribution-wall" class="nav-link">Contributors</a>
+        </div>
+        
+        <a class="nav-cta-btn" href="index.html#contribute">
+          <span>Join the Build</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
       </div>
+    </div>
+  </nav>
 
-      <div class="board-section">
-        <p class="board-section-title">Workspaces</p>
-        <a class="board-link is-active" href="board.html">Project Status Board</a>
-        <a class="board-link" href="philosophy.html">Project Philosophy</a>
-        <a class="board-link" href="index.html">Main Website</a>
-      </div>
-
-    </aside>
-
+  <div class="board-shell">
     <main class="board-main">
       <header class="board-header">
         <div class="board-heading">
@@ -57,6 +78,7 @@
     </main>
   </div>
 
+  <script src="js/script.js"></script>
   <script src="js/board.js"></script>
 </body>
 </html>
