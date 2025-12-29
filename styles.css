@@ -593,6 +593,8 @@ img {
   color: #fdf6eb;
   padding: 22px;
   border-radius: 18px;
+  display: grid;
+  gap: 16px;
 }
 
 .protocol-board {
@@ -600,6 +602,10 @@ img {
   height: auto;
   display: block;
   border-radius: 14px;
+}
+
+.protocol-cta {
+  justify-self: start;
 }
 
 .protocol-panel h4 {
