@@ -5,27 +5,9 @@
       "accent": "sand",
       "items": [
         {
-          "title": "Make quick start guide for contributors",
-          "priority": "P1",
-          "owner": "Jazz",
-          "date": "Sep 10, 2024"
-        },
-        {
-          "title": "Rewrite the website",
-          "priority": "P2",
-          "owner": "Hasan",
-          "date": "Sep 12, 2024"
-        },
-        {
-          "title": "Update palm shell tolerances",
-          "priority": "P2",
-          "owner": "LUIS",
-          "date": "Sep 14, 2024"
-        },
-        {
-          "title": "Build wiring harness checklist",
+          "title": "Design Electronic Circuit Board",
           "priority": "P3",
-          "owner": "MIRA",
+          "owner": "Jazz",
           "date": "Sep 16, 2024"
         }
       ]
@@ -34,24 +16,6 @@
       "title": "In Progress",
       "accent": "amber",
       "items": [
-        {
-          "title": "Grip strength test rig",
-          "priority": "P1",
-          "owner": "BASHIR",
-          "date": "Sep 05, 2024"
-        },
-        {
-          "title": "Sensor calibration sweep",
-          "priority": "P2",
-          "owner": "NIA",
-          "date": "Sep 06, 2024"
-        },
-        {
-          "title": "Firmware smoothing pass",
-          "priority": "P3",
-          "owner": "DEV",
-          "date": "Sep 08, 2024"
-        }
       ]
     },
     {
@@ -59,28 +23,16 @@
       "accent": "mint",
       "items": [
         {
-          "title": "Stage 3 photo documentation",
+          "title": "Make quick start guide for contributors",
+          "priority": "P1",
+          "owner": "Jazz",
+          "date": "Dec 10, 2025"
+        },
+        {
+          "title": "Rewrite the website",
           "priority": "P2",
-          "owner": "ASHA",
-          "date": "Aug 30, 2024"
-        },
-        {
-          "title": "Cable routing diagram v2",
-          "priority": "P3",
-          "owner": "MIGUEL",
-          "date": "Aug 28, 2024"
-        },
-        {
-          "title": "Parts substitution list",
-          "priority": "P3",
-          "owner": "KEIKO",
-          "date": "Aug 25, 2024"
-        },
-        {
-          "title": "Finger joint stress test",
-          "priority": "P2",
-          "owner": "KITE",
-          "date": "Aug 22, 2024"
+          "owner": "Jazz",
+          "date": "Dec 22, 2025"
         }
       ]
     },
@@ -88,18 +40,6 @@
       "title": "Archived",
       "accent": "slate",
       "items": [
-        {
-          "title": "Stage 1 design review",
-          "priority": "P3",
-          "owner": "MARA",
-          "date": "Aug 10, 2024"
-        },
-        {
-          "title": "Prototype actuator test",
-          "priority": "P2",
-          "owner": "OMAR",
-          "date": "Aug 05, 2024"
-        }
       ]
     }
   ]
