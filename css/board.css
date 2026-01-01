@@ -1,5 +1,5 @@
 .board-page {
-  background: linear-gradient(135deg, #f6f1e7 0%, #f3f6fb 45%, #eef2f6 100%);
+  background: #0b0e12;
   color: var(--ink);
   min-height: 100vh;
 }
@@ -10,7 +10,7 @@
 }
 
 .board-sidebar {
-  background: linear-gradient(180deg, #35383c 0%, #0b0c0e 100%);
+  background: #0b0e12;
   color: #edf3ff;
   padding: 24px 18px 32px;
   position: sticky;
@@ -130,6 +130,10 @@
   padding: 36px 40px 70px;
 }
 
+.board-heading .heading {
+  color: #f5f6f7;
+}
+
 .board-header {
   display: flex;
   justify-content: space-between;
@@ -149,11 +153,11 @@
 
 .board-subtitle {
   font-size: 1rem;
-  color: rgba(23, 22, 22, 0.7);
+  color: rgba(245, 246, 247, 0.72);
 }
 
 .board-subtitle a {
-  color: var(--teal);
+  color: rgba(245, 246, 247, 0.92);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
